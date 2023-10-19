@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+/* Alinha os links do cabeçalho. */
+div.listH{
+    text-align: center;
+}
+
+/* Estilização dos links do cabeçalho. */
+header li{
+    list-style: none;
+    padding: 20px;
+    display: inline;
+}
+
+/* Cor e alinhamento do background. */
+body{
+    background: #131417;
+    text-align: left;
+}
+
+/* Espaçamento das palavras. */
+.bodyInfo{
+    padding: 10px;
+    word-spacing: 3px;
+}
+
+/* Espaçamento das linhas de cada parágrafo. */
+.bodyInfo p{
+    line-height: 25px;
+}
+
+
+.bodyInfo h1{
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 15px;
+    width: 100%;
+    background: #2a2a2ca4;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.icon-home{
+    margin-right: 40px;
+
+}
+
+#home, 
+#sobre{
+
+    padding: 15px;
+    background-color: #2A2A2C;
+    border-radius: 25px;
+}
+
+#sobre, 
+#home p{
+    margin: 0 auto;
+    padding: 20px;
+    width: auto;
+}
+
+.sobre-exp{
+
+    margin-top: 30px;
+    border-top: 1px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: #eaecf15e;
+
+}
+
+.li-skill{
+    padding: 0px 0px 0px 25px;
+}
+
+#formacao, 
+#portfolio{
+    padding: 10px 0px 20px 45px;
+    background-color: #2A2A2C;
+    border-radius: 20px;
+}
+
+
+
+#formacao .head-form, #portfolio .head-port{
+    text-align: center;
+    padding: 0px 60px 0px 0px;
+}
+
+
+#ctt{
+
+    background-color: #2A2A2C;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+}
+
+input,
+textarea{
+    padding: 5px;
+}
+
+.display-ctt{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.ctt-msg{
+
+    background-color: #222221;
+    padding: 25px;
+    border-radius: 25px;
+    width: 300px;
+    margin-left: 10px;
+    text-align: center;
+    
+
+}
+
+
+
+.fa-linkedin, .fa-github{
+ margin-top: 25px;
+}
+
+.fa-linkedin:hover{
+    color: #3b6abb
+}
+
+.fa-github:hover{
+    color: #000000a4
+
+}
+
+
+div .sub{
+
+    background-color: #8B3D4A;
+    border-style: none;
+    border-radius: 10px;
+    width: 60px;
+    margin-left: 80px;
+}
+
+.icons-social{
+
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 25px;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.sub:hover{
+
+    background-color: #131417;
+
+}
+
+a:hover{
+
+    color: #8B3D4A;
+
+}
+
+footer{
+    background: linear-gradient(#4d4d3e00, #8B3D4A80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #222221;
+    margin-top: 25px;
+    margin: 0px auto;
+    height: 30px;
+}
+
+.foot p{
+    font-size: 13px;
+    opacity: 60%;
+}
+
+@media screen and (min-width: 768px) {
+    .bodyInfo{
+        margin: auto;
+        width: 75%;
+    }
+
+    .listH a{
+        display: inline-flex;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .listH a:hover{
+        color: #8B3D4A;
+    }
+
+
+    .ctt-msg{
+        margin-left: 25vh;
+    }
+
+ 
+
+}
+
+@media(max-width: 548px){
+
+    .display-ctt{
+        display: block;
+    }
+
+    .ctt-msg{
+        margin: 20px auto;
+    }
+
+    .ctt-form{
+       text-align: center;
+    }
+
+    .sub{
+        margin-right: 80px;
+    }
+
+    header .listH li{
+        font-size: 15px;
+        padding: 8px;
+
+    }
+
+}

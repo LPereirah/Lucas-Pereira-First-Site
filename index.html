@@ -1,64 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Lucas Pereira</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/Image/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
+
     <!--    Links do cabeçalho   -->
     <header>
 
         <div class="listH">
+
            <ul>
 
-                <li><a href="#home">Home</a></li>
+                <li class="icon-home"><a href="#home"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#sobre">Sobre mim</a></li>
                 <li><a href="#formacao">Formação</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#ctt">Contato</a></li>
 
            </ul> 
+
         </div>
 
     </header>
-    <br>
 
     <!--    Conteúdo escrito do site    -->
     <section class="bodyInfo"> <!-- Todo o conteúdo escrito -->
+
         <div id="home">
-            <h1>Bem-vindo(a) ao meu site!</h1>
+
+            <h1>Bem-vindo(a) ao meu site! <i class="fa-solid fa-laptop-code"></i></h1>
             <br>
-            <p>Este site é um projeto da faculdade, sendo ele uma das minhas primeiras experiências com site responsivo. Portanto, espero que tenha uma ótima experiência navegando em meu site!
-            <br> Neste site constam algumas informações ao meu respeito, logo, fique a vontade para explorá-lo!</p>
+            <p>
+                Este site é um projeto da faculdade, sendo ele uma das minhas primeiras experiências com site responsivo. Portanto, espero que tenha uma ótima experiência navegando em meu site!
+                <br> Neste site constam algumas informações ao meu respeito, logo, fique a vontade para explorá-lo!
+            </p>
+        
         </div>
         <br>
         <br>
 
        
         <div id="sobre">
-            <h1>Sobre Mim</h1>
+
+            <h1>Sobre Mim <i class="fa-solid fa-clipboard-user"></i> </h1>
             <br>
             <p>
                 Meu nome é Lucas e sou estudante de Análise e Desenvolvimento de Sistemas. <br>
                 Sou de São Paulo, SP, onde nasci e moro até os dias de hoje. <br>
                 No momento só estudo, porém logo estarei estagiando na área, sendo essa uma chance de aperfeiçoar minhas habilidades (Hard e Soft Skills). <br>
-                Já possuo conhecimento em algumas linguagens de programação, como: Java e Python; Também possuo conhecimento intermediário na linhua inglesa. 
-                <br>Todavia, sigo estudando com intuito de me tornar um profissional capacitado e que possa contribuir com resoluções inteligentes para o mercado.
+                Todavia, sigo estudando com intuito de me tornar um profissional capacitado e que possa contribuir com resoluções inteligentes para o mercado.
             </p>
+            <p class="sobre-exp">
+                <br>
+                <h1 style="text-align: center;">Hard Skills <i class="fa-solid fa-bolt"></i></h1>
+                <br>
+                <div class="li-skill">
+                    <ul>
+                        <li>Conhecimento intermediário em: Java, Python;</li>
+                        <li>Conhecimento, respectivamente, básico e médio em:  MySQL, HTML e CSS;</li>
+                        <li>Domínio da Língua inglesa: Intermediário. </li>
+                    </ul>
+                </div>
+                
+                
+                
+
+            </p>
+
         </div>
         
         <br>
         <br>
         
         <div id="formacao">
-            <h1 class="head-form">Formação</h1>
+            <h1 class="head-form">Formação <i class="fa-solid fa-graduation-cap"></i></h1>
             <br>
             <p>Ensino superior:</p>
             <br>
@@ -77,7 +107,7 @@
         <br>
 
         <div id="portfolio">
-            <h1 class="head-port">Portfólio</h1>
+            <h1 class="head-port">Portfólio <i class="fa-solid fa-briefcase"></i> </h1>
             <br>
             <ul>
                 <li>Cofrinho que armazena e converte moedas: <a href="http://" target="_blank">Link</a> </li>
@@ -89,41 +119,61 @@
 
         <div id="ctt">
 
-            <div class="cttInfo">
-                <h1>Entre em contato</h1>
-            <br>
-            <form method="get">
-                <p>Nome:</p>
-                <input style="color: black" name="nome" type="text">
+            <div>
+
+                <h1>Entre em contato <i class="fa-regular fa-comment"></i> </h1>
                 <br>
-                <br>
-                <p>E-mail: </p>
-                <input style="color: black" name="email" type="email">
-                <br>
-                <br>
-                <p1>Observação:</p1>
-                <br>
-                <textarea style="color: black" name="obs" cols="30" rows="10">Insira alguma mensagem...</textarea>
-                <br>
-                <input class="sub" type="submit">
-                </form>
+
             </div>
-    
-          
-            <div class="cttMsg">
-                <p>Deixe suas infomações e uma mensagem para que eu possa entrar em contato!</p>
+            
+            <div class="display-ctt">
+
+                <div class="ctt-form">
+
+                    <form action="https://formspree.io/f/mpzgbaap" method="post">
+
+                        <p>Nome:</p>
+                        <input style="color: black" name="nome" type="text" placeholder="Nome completo" required>
+                        <br>
+                        <br>
+                        <p>E-mail: </p>
+                        <input style="color: black" name="email" type="email" placeholder="Insira seu e-mail" required>
+                        <br>
+                        <br>
+                        <textarea style="color: black" name="obs" cols="30" rows="10" placeholder="Deixe sua mensagem..." required></textarea>
+                        <br>
+                        <input class="sub" type="submit" value="Enviar">
+
+                    </form>
+
+                </div>
+        
+              
+                <div class="ctt-msg">
+
+                    <h4>Minhas redes soicias</h4>
+                    <br>
+                    <div class="icons-social">
+                        <a target="_blank" href="https://www.linkedin.com/in/lucas-da-silva-pereira-6b375a243/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </div>
+                    <div class="icons-social">
+                        <a target="_blank" href="https://github.com/LPereirah"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+                        
+                </div>
 
             </div>
     
         </div>
+
     </section>
     
-
+    <!--    Rodapé do site    -->
     <footer>
 
         <div class="foot">
 
-            <h5>© 2023 - Lucas Pereira. Todos os direitos reservados.</h5>
+            <p>© 2023 - Lucas Pereira. Todos os direitos reservados.</p>
 
         </div>
 
