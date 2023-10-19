@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+/* Alinha os links do cabeçalho. */
+div.listH{
+    text-align: center;
+}
+
+/* Estilização dos links do cabeçalho. */
+header li{
+    list-style: none;
+    padding: 20px;
+    display: inline;
+}
+
+/* Cor e alinhamento do background. */
+body{
+    background: #131417;
+    text-align: left;
+}
+
+/* Espaçamento das palavras. */
+.bodyInfo{
+    padding: 10px;
+    word-spacing: 3px;
+}
+
+/* Espaçamento das linhas de cada parágrafo. */
+.bodyInfo p{
+    line-height: 25px;
+}
+
+
+.bodyInfo h1{
+    text-align: center;
+}
+
+header{
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 15px;
+    width: 100%;
+    background-color: #222221;
+}
+
+header a{
+
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+
+#home, #sobre{
+
+    padding: 15px;
+    background-color: #2A2A2C;
+    border-radius: 25px;
+}
+
+#sobre, #home p{
+    margin: 0 auto;
+    padding: 20px;
+    width: auto;
+}
+
+#formacao, #portfolio{
+    padding: 10px 0px 20px 45px;
+    background-color: #2A2A2C;
+    border-radius: 20px;
+}
+
+
+
+#formacao .head-form, #portfolio .head-port{
+    text-align: center;
+    padding: 0px 60px 0px 0px;
+}
+
+
+#ctt{
+
+    background-color: #2A2A2C;
+    border-radius: 25px;
+    padding: 15px;
+    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+ 
+}
+
+.cttMsg{
+
+    background-color: #222221;
+    padding-top: 85px;
+    border-radius: 25px;
+    width: 300px;
+
+}
+
+
+
+
+div .sub{
+
+    background-color: #8B3D4A;
+    border-style: none;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.sub:hover{
+
+    background-color: #131417;
+
+}
+
+a:hover{
+
+    color: #8B3D4A;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #222221;
+    margin-top: 25px;
+    margin: 0px auto;
+    height: 30px;
+}
+
+footer h5{
+    opacity: 75%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .bodyInfo{
+
+        margin: auto;
+        width: 75%;
+              
+    }
+
+     .listH a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 50px;
+    }
+
+    .listH a:hover{
+
+        color: #8B3D4A;
+
+    }
+
+    header{
+        padding-top: 25px;
+        height: 70px;
+    }
+
+    #ctt{
+
+        text-align: left;
+
+    }
+
+}
