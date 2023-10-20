@@ -35,11 +35,11 @@ body{
     line-height: 25px;
 }
 
-
 .bodyInfo h1{
     text-align: center;
 }
 
+/* Estilização do cabeçalho - início */
 header{
     display: flex;
     justify-content: center;
@@ -57,12 +57,16 @@ header a{
 
 .icon-home{
     margin-right: 40px;
-
 }
 
+.fa-house:hover{
+    color: #8B3D4A;
+}
+/* Estilização do cabeçalho - fim */
+
+/* Estilização do texto do corpo - início */
 #home, 
 #sobre{
-
     padding: 15px;
     background-color: #2A2A2C;
     border-radius: 25px;
@@ -76,7 +80,6 @@ header a{
 }
 
 .sobre-exp{
-
     margin-top: 30px;
     border-top: 1px;
     border-bottom: 0px;
@@ -85,11 +88,10 @@ header a{
     border-left: 0px;
     border-style: solid;
     border-color: #eaecf15e;
-
 }
 
 .li-skill{
-    padding: 0px 0px 0px 25px;
+    padding-left: 25px;
 }
 
 #formacao, 
@@ -108,12 +110,10 @@ header a{
 
 
 #ctt{
-
     background-color: #2A2A2C;
     border-radius: 25px;
     padding: 15px;
     margin-bottom: 20px;
-    
 }
 
 input,
@@ -122,24 +122,19 @@ textarea{
 }
 
 .display-ctt{
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 
 .ctt-msg{
-
     background-color: #222221;
     padding: 25px;
     border-radius: 25px;
     width: 300px;
-    margin-left: 10px;
+    margin-left: 100px;
     text-align: center;
-    
-
 }
 
 
@@ -154,12 +149,10 @@ textarea{
 
 .fa-github:hover{
     color: #000000a4
-
 }
 
 
 div .sub{
-
     background-color: #8B3D4A;
     border-style: none;
     border-radius: 10px;
@@ -168,27 +161,23 @@ div .sub{
 }
 
 .icons-social{
-
     height: 45px;
     background-color: rgba(255, 255, 255, 0.144);
     border-radius: 25px;
     justify-content: center;
     margin: 20px;
-
 }
 
 .sub:hover{
-
     background-color: #131417;
-
 }
 
 a:hover{
-
     color: #8B3D4A;
-
 }
+/* Estilização do texto do corpo - fim */
 
+/* Rodapé */
 footer{
     background: linear-gradient(#4d4d3e00, #8B3D4A80);
     display: flex;
@@ -210,7 +199,8 @@ footer{
     opacity: 60%;
 }
 
-@media screen and (min-width: 768px) {
+/* Media queries */
+@media (min-width: 768px) {
     .bodyInfo{
         margin: auto;
         width: 75%;
@@ -227,18 +217,9 @@ footer{
     .listH a:hover{
         color: #8B3D4A;
     }
-
-
-    .ctt-msg{
-        margin-left: 25vh;
-    }
-
- 
-
 }
 
 @media(max-width: 548px){
-
     .display-ctt{
         display: block;
     }
@@ -260,5 +241,7 @@ footer{
         padding: 8px;
 
     }
-
+    .icon-home{
+        margin: 0;
+    }
 }
